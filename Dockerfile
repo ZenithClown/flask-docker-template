@@ -11,7 +11,7 @@
 # -------------------------------------------------------------------
 
 FROM tiangolo/uwsgi-nginx-flask:python3.8
-MAINTAINER Debmalya Pramanik <dPramanik.official@gmail.com>
+# MAINTAINER Debmalya Pramanik <dPramanik.official@gmail.com>
 
 ENV INSTALL_PATH /usr/src/helloworld
 RUN mkdir -p $INSTALL_PATH
@@ -35,4 +35,4 @@ RUN pip install -r requirements.txt
 COPY . .
 
 # run the application in docker environment
-CMD [ "python", "./manage.py" ]
+# CMD [ "python", "./manage.py" ] # this will run forever
