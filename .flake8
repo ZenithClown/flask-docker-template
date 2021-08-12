@@ -1,4 +1,7 @@
 [flake8]
+# flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+# run the flake code linting checks in localhost using the above command
+# other specific settings to flake8 is described below
     per-file-ignores =
         # add per line ignores, if required
         # F403 '... import *' used; unable to detect undefined names

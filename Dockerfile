@@ -35,4 +35,4 @@ RUN pip install -r requirements.txt
 COPY . .
 
 # run the application in docker environment
-# CMD [ "python", "./manage.py" ] # this will run forever
+CMD [ "python", "./manage.py" ] # this will run forever
