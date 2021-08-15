@@ -15,22 +15,25 @@ FROM tiangolo/uwsgi-nginx-flask:python3.8
 # add maintainer tag
 LABEL maintainer="Debmalya Pramanik <dpramanik.official@gmail.com>"
 
-# add MySQL Client
-RUN apk add --no-cache mysql-client
-
 # add dummy app
 ENV INSTALL_PATH /usr/src/helloworld
 RUN mkdir -p $INSTALL_PATH
 
-# install net-tools
+# install net-tools mysql-client
+# using mariadb-client inplace of mysql-client
 RUN apt-get update \
   && DEBIAN_FRONTEND=noninteractive apt-get install -y \
     net-tools \
+  && apt-get install -y --no-install-recommends mariadb-client \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 
 # set working directory
 WORKDIR $INSTALL_PATH
+
+# logging addition is included
+# change the directory `app` as required
+RUN mkdir -p /tmp/logs/app/
 
 # setting up environment variables
 # application specific ENVIRONMENT VARIABLES
@@ -71,4 +74,6 @@ COPY . .
 # run the application in docker environment
 # you can use the wsgi service to start the application
 # or the default python can also be used
+# run create_db to create all the tables using flask
+CMD [ "python", "./create_db.py" ]
 CMD [ "python", "./manage.py" ]
