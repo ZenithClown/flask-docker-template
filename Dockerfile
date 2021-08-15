@@ -11,8 +11,14 @@
 # -------------------------------------------------------------------
 
 FROM tiangolo/uwsgi-nginx-flask:python3.8
-# MAINTAINER Debmalya Pramanik <dPramanik.official@gmail.com>
 
+# add maintainer tag
+LABEL maintainer="Debmalya Pramanik <dpramanik.official@gmail.com>"
+
+# add MySQL Client
+RUN apk add --no-cache mysql-client
+
+# add dummy app
 ENV INSTALL_PATH /usr/src/helloworld
 RUN mkdir -p $INSTALL_PATH
 
@@ -63,4 +69,6 @@ RUN pip install -r requirements.txt
 COPY . .
 
 # run the application in docker environment
-CMD [ "python", "./manage.py" ] # this will run forever
+# you can use the wsgi service to start the application
+# or the default python can also be used
+CMD [ "python", "./manage.py" ]
