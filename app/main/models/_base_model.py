@@ -48,4 +48,15 @@ class ModelSchema(object):
         return f"Model Class: {self.__name__}"
 
     def __to_dict__(self):
+        # method can be used to automatically parse data into key-value pairs
+        # without the use of any lambda functionalities or marshalling
         return { c.key : getattr(self, c.key) for c in self.__table__.columns }
+
+
+    def __get_dtypes__(self):
+        # returns { column-nane : data-type }
+        return { c.key : str(c.type) for c in self.__table__.columns }
+
+    def __get_column_names__(self):
+        # returns list of all column names
+        return [c.key for c in self.__table__.columns]
