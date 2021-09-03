@@ -2,12 +2,15 @@
 
 # define base model schema for all basic models
 
-class ModelSchema(object):
+class ModelClass(object):
     """Base Model Schema
 
-    The base model schema can be inherited by any `db.model` class, 
+    The base model class is defined under api-model class, 
     as this provides some functions helpful for development,
     representation and fetching records from `repository`.
+
+    More information on Flask 2.x Customizing is available
+    https://flask-sqlalchemy.palletsprojects.com/en/2.x/customizing/
 
     ```python
       class NewTableView(db.Model, ModelSchema):
@@ -15,16 +18,14 @@ class ModelSchema(object):
 
         __tablename__ = 'my_table'
 
-        # provide field defination here
-
-
-        def __init__(self):
-            ModelSchema().__init__()
+        # define table attributes here
 
       class Repository(object):
         '''docstring'''
 
         def get(self) -> list:
+            # since ModelClass has the following functionalities is also available
+
             return [record.__to_dict__() for record in NewTableView.query.all()]
     ```
 
