@@ -18,6 +18,7 @@
   3. `.github/workflows` is added however, it is recomended that you create your own workflows either using **GitHub Actions** or on your own.
   4. Basic `docker` files are added for convention, modify it as per requirement. Recomended to delete the file, if not required.
   5. The repository uses `markdown` instead of `rich text format`, so make necessary changes to file extension/type as required.
+  6. [Engine Configuration](https://docs.sqlalchemy.org/en/14/core/engines.html) for SQLAlchemy Documentation.
 
 ## Quick Start Guide
 <p align = "justify">Introduced in 2019, users can now create a repository from templates in GitHub. To do this, simply head over to any repository settings and enable "Template Repository" from the Options Menu. When creating a <i>new repository</i> from this template, you can just click on <b><code>Use this template</code></b> available in this repository (refer the picture below).</p>
