@@ -25,6 +25,8 @@ updates:
       prefix: "pip-prod"
       prefix-development: "pip-dev"
       include: "scope"
+    # increase pull request limit to 10 for pip dependencies
+    open-pull-requests-limit: 10
       
   # maintain dependecies for github-actions
   - package-ecosystem: "github-actions"
