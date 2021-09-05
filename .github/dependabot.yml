@@ -14,9 +14,6 @@ updates:
     labels:
       - "pip"
       - "dependencies"
-    reviewers:
-      - "octocat"
-      - "ZenithClown"
     assignees:
       - "ZenithClown"
     # add commit-message with prefix to determine dependency group
@@ -35,7 +32,3 @@ updates:
       interval: "monthly"
     labels:
       - "github-actions"
-      - "dependencies"
-    reviewers:
-      - "octocat"
-      - "ZenithClown"
