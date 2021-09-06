@@ -3,7 +3,6 @@
 """API Management and Server Running Module"""
 
 import os
-from flask import url_for
 from flask_restful import Api
 
 from app.main import (
