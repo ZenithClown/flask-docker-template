@@ -8,6 +8,12 @@
 	<a href = "https://www.kaggle.com/dPramanik/"><img height="16" width="16" src="https://unpkg.com/simple-icons@v3/icons/kaggle.svg"/></a>
 	<a href = "https://app.pluralsight.com/profile/Debmalya-Pramanik/"><img height="16" width="16" src="https://unpkg.com/simple-icons@v3/icons/pluralsight.svg"/></a>
 	<a href = "https://stackoverflow.com/users/6623589/"><img height="16" width="16" src="https://unpkg.com/simple-icons@v3/icons/stackoverflow.svg"/></a>
+	<br>
+	<a href="https://github.com/ZenithClown/flask-docker-template/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/ZenithClown/flask-docker-template?style=plastic"></a>
+	<a href="https://github.com/ZenithClown/flask-docker-template/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/ZenithClown/flask-docker-template?style=plastic"></a>
+	<a href="https://github.com/ZenithClown/flask-docker-template/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/ZenithClown/flask-docker-template?style=plastic"></a>
+	<a href="https://github.com/ZenithClown/flask-docker-template/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/ZenithClown/flask-docker-template?style=plastic"></a>
+	<a href="https://app.travis-ci.com/ZenithClown/flask-docker-template.svg?branch=master"><img alt="Travis CI Build" src="https://app.travis-ci.com/ZenithClown/flask-docker-template.svg?branch=master"></a>
 </h1>
 
 <p align = "justify">A simple <i>flask-template</i> for REST-API design and implementation. Please include the <a href = "https://github.com/ZenithClown/flask-docker-template/tree/master">Template Link</a> in your design. Template includes <code>.gitignore</code> and <code>.gitattributes</code> related to python and flask-api model. You can also update/change/delete <code>LICENSE</code> as required. Other files are related to <code>docker</code> and <code>flake8</code> (code linting) is included with basic setup. The template is built on GitHub, thus <code>.github</code> directory is included with issue template, and workflows directory.</p>
