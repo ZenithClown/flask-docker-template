@@ -6,5 +6,7 @@
     "description" : "A short description of {{ cookiecutter.project_name }}.",
 
     "open_source_license" : ["MIT", "BSD-3-Clause", "No license file"],
-    "generate_cicd_files" : ["yes", "no"]
+    "generate_cicd_files" : ["yes", "no"],
+
+    "_copy_without_render": [".github/*"]
 }

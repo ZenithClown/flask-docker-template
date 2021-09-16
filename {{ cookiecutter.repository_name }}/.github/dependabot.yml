@@ -40,5 +40,4 @@ updates:
       interval: "monthly"
     labels:
       - "github-actions"
-
 {% endif %}
