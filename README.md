@@ -13,7 +13,7 @@
 	<a href="https://github.com/ZenithClown/flask-docker-template/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/ZenithClown/flask-docker-template?style=plastic"></a>
 	<a href="https://github.com/ZenithClown/flask-docker-template/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/ZenithClown/flask-docker-template?style=plastic"></a>
 	<a href="https://github.com/ZenithClown/flask-docker-template/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/ZenithClown/flask-docker-template?style=plastic"></a>
-	<a href="https://app.travis-ci.com/ZenithClown/flask-docker-template.svg?branch=master"><img alt="Travis CI Build" src="https://app.travis-ci.com/ZenithClown/flask-docker-template.svg?branch=master"></a>
+	<a href="https://app.travis-ci.com/ZenithClown/flask-docker-template.svg?branch=master"><img alt="Travis CI Build" src="https://app.travis-ci.com/ZenithClown/flask-docker-template.svg?branch=master"></a><sup><b>*</b></sup>
 </h1>
 
 <p align = "justify">A simple <i>flask-template</i> for REST-API design and implementation. Please include the <a href = "https://github.com/ZenithClown/flask-docker-template/tree/master">Template Link</a> in your design. Template includes <code>.gitignore</code> and <code>.gitattributes</code> related to python and flask-api model. You can also update/change/delete <code>LICENSE</code> as required. Other files are related to <code>docker</code> and <code>flake8</code> (code linting) is included with basic setup. The template is built on GitHub, thus <code>.github</code> directory is included with issue template, and workflows directory.</p>
@@ -46,3 +46,7 @@ rsync -rh ~/source/directory /destination/directory
 
 ## Setup Information
 <p align = "justify">Configure the application by setting <code>ENVIRONMENT VARIABLES</code> as required. Sample variables are provided in <code>.env.bkp</code>, however for production grade application is is recomended that you set them at <code>$PATH</code>. Start the application using <code>python manage.py</code> which serves the port <code>0.0.0.0:5000</code> by default.</p>
+
+---
+
+<p align = "justify"><b>*</b> Travis CI allows only 10k Credits on free-tier. The build might be old, please re-enable and check service if required.</p>
