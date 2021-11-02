@@ -43,7 +43,7 @@ PyYAML==5.4.1
 # comment to install the specific version, or
 # allow pip to automatically check and download
 # run `pip check`
-alembic==1.7.3
+alembic==1.7.4
 amqp==5.0.6
 aniso8601==9.0.1
 attrs==21.2.0
@@ -77,15 +77,15 @@ mccabe==0.6.1
 mock==4.0.3
 packaging==21.2
 pluggy==1.0.0
-prompt-toolkit==3.0.20
+prompt-toolkit==3.0.21
 py==1.10.0
-pycodestyle==2.7.0
+pycodestyle==2.8.0
 pycparser==2.20
 pyflakes==2.3.1
-pyparsing==2.4.7
+pyparsing==3.0.4
 python-dateutil==2.8.2
 python-editor==1.0.4
-pytz==2021.1
+pytz==2021.3
 redis==3.5.3
 six==1.16.0
 toml==0.10.2
