@@ -23,7 +23,7 @@ WTForms-Components==0.10.5
 # testing and static analysis
 flake8==3.9.2
 pytest==6.2.5
-pytest-cov==2.12.1
+pytest-cov==3.0.0
 
 # foreign function and dependencies
 Jinja2==3.0.2
