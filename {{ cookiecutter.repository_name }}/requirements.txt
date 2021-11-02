@@ -33,7 +33,7 @@ Werkzeug==2.0.2
 
 # utilities
 python-dotenv==0.19.1
-PyYAML==5.4.1
+PyYAML==6.0
 
 # additional dependencies
 # these are required by one or more packages
