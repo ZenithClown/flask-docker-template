@@ -17,7 +17,7 @@ SQLAlchemy==1.4.26
 
 # forms handling
 Flask-WTF==0.15.1
-WTForms==2.3.3
+WTForms==3.0.0
 WTForms-Components==0.10.5
 
 # testing and static analysis
