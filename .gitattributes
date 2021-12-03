@@ -97,6 +97,3 @@
 # Jupyter Notebooks
 # =================
 *.ipynb     text
-
-# ignore cookiecutter files from github releases
-/{{ cookiecutter.repository_name }} export-ignore
