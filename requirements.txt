@@ -44,7 +44,7 @@ PyYAML==6.0
 # allow pip to automatically check and download
 # run `pip check`
 alembic==1.7.5
-amqp==5.0.6
+amqp==5.0.7
 aniso8601==9.0.1
 attrs==21.2.0
 Babel==2.9.1
