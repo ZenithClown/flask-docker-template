@@ -70,7 +70,7 @@ iniconfig==1.1.1
 intervals==0.9.2
 itsdangerous==2.0.1
 kombu==5.2.2
-limits==2.0.3
+limits==2.1.0
 Mako==1.1.6
 MarkupSafe==2.0.1
 mccabe==0.6.1
