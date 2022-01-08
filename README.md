@@ -40,7 +40,7 @@ rsync -rh ~/source/directory /destination/directory
 ```
 
 ### Generate Template using `cookiecutter`
-<p align = "justify"><a href = "https://cookiecutter.readthedocs.io/en/1.7.3/README.html">cookiecutter</a> is an excellet module for creating projects from templates. The process can be done so locally (as shown below), or using command line utility <code>cookiecutter https://github.com/ZenithClown/flask-docker-template</code> by directly accesing the repository from GitHub.</p>
+<p align = "justify"><a href = "https://cookiecutter.readthedocs.io/en/1.7.3/README.html">cookiecutter</a> is an excellet module for creating projects from templates. The process can be done so locally (as shown below), or using command line utility <code>cookiecutter https://github.com/ZenithClown/flask-docker-template/tree/cookiecutter</code> by directly accesing the repository from GitHub.</p>
 
 <img alt = "using_cookiecutter_locally_demo" src = "./assets/cookiecutter.png">
 
