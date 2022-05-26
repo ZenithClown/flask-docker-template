@@ -2,6 +2,8 @@
 # package ecosystems to update and where the package manifests are located.
 # Please see the documentation for all configuration options:
 # https://help.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+# to use dependabot, rename the file to `dependabot.yml` or check documentations or github actions
+# since this is a template/boilerplate design, thus this functionality is now disabled
 
 version: 2
 updates:
