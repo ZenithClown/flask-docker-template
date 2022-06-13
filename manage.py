@@ -31,7 +31,7 @@ app = create_app(os.getenv("PROJECT_ENV_NAME") or "dev") # check config.py
 def favicon():
     # use os.path.join() syntax if not using static directory
     # like os.path.join(".", "static")
-    return send_from_directory("static", "favicon.ico", mimetype = "image/vnd.microsoft.icon")
+    return send_from_directory(os.path.join(".", "static", "favicon.ico"), mimetype = "image/vnd.microsoft.icon")
 
 api = Api(app)
 
