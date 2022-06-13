@@ -6,10 +6,7 @@ import os
 from flask_restful import Api
 from flask import send_from_directory
 
-from app.main import (
-        db, # SQLAlchemy Connector dB Object
-        create_app
-    )
+from app.main import create_app
 
 # setting the environment
 from dotenv import load_dotenv # Python 3.6+
@@ -31,7 +28,8 @@ app = create_app(os.getenv("PROJECT_ENV_NAME") or "dev") # check config.py
 def favicon():
     # use os.path.join() syntax if not using static directory
     # like os.path.join(".", "static")
-    return send_from_directory(os.path.join(".", "static", "favicon.ico"), mimetype = "image/vnd.microsoft.icon")
+    __ICO_PATH__ = os.path.join(".", "assets", "logo", "favicon.ico")
+    return send_from_directory(__ICO_PATH__, mimetype = "image/vnd.microsoft.icon")
 
 api = Api(app)
 
