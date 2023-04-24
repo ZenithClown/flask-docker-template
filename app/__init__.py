@@ -11,7 +11,7 @@ from the total module.
 """
 
 from os import getenv
-from os.path import join
+from os.path import join, abspath, dirname
 from dotenv import load_dotenv # Python 3.6+
 
 from flask_restful import Api
@@ -23,6 +23,13 @@ from .main import create_app # controlling application
 # for `production` recommended to define all under `$PATH`
 # and to control code leakage, comment/delete loadenv modules
 load_dotenv(verbose = True) # configure .env File or set Environment Variables
+
+# * define `APP_ROOT_DIR` & `PROJECT_ROOT_DIR` - for global usage
+APP_ROOT_DIR = join(abspath(dirname(__file__)))
+PROJECT_ROOT_DIR = join(APP_ROOT_DIR, "..") # `manage.py` file location
+
+# define api version, is also sent for identification
+__version__ = open(join(APP_ROOT_DIR, "VERSION"), "r").read()
 
 # define project type from `config.py` or `.env` file or `$PATH`
 # configure different environment under `PROJECT_ENV_NAME` like:
