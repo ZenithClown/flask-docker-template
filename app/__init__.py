@@ -46,7 +46,7 @@ def favicon():
     # use os.path.join() syntax if not using static directory
     # like os.path.join(".", "static")
     __ICO_PATH__ = os.path.join(PROJECT_ROOT_DIR, "assets", "logo", "favicon.ico")
-    return send_from_directory(__ICO_PATH__, mimetype = "image/vnd.microsoft.icon")
+    return send_from_directory(__ICO_PATH__, mimetype = "image/vnd.microsoft.icon", path = __ICO_PATH__)
 
 # create `api` object using `Api` and define all endpoints
 # .. versionchanged:
