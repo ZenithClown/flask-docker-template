@@ -12,6 +12,11 @@ formatters :
   error :
     format : "%(levelname)s <PID %(process)d:%(processName)s> %(name)s.%(funcName)s(): %(message)s"
 
+filters:
+# https://stackoverflow.com/a/62934150/6623589
+  NoConsoleFilter:
+    (): __main__.NoConsoleFilter
+
 handlers : # https://docs.python.org/3/library/logging.handlers.html#module-logging.handlers
 
   console : # standard, print(s) in console
@@ -19,6 +24,7 @@ handlers : # https://docs.python.org/3/library/logging.handlers.html#module-logg
     level     : DEBUG
     formatter : standard # name of the formmater, as specified above'
     stream    : ext://sys.stdout
+    filters   : [NoConsoleFilter]
 
   infoHandler :
     class       : logging.handlers.RotatingFileHandler
